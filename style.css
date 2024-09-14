@@ -112,3 +112,34 @@ marquee button{
     background-color: #004c8f;
     font-size: 20px;
 }
+nav > i{
+    display: none;
+    font-size: 30px;
+}
+
+
+@media (max-width: 600px){
+    nav > i{
+        display: initial;
+    }
+    .heading nav a{
+        display: none;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .left{
+        height: 70vh;
+        width: 100vw;
+        padding: 50px ;
+    }
+    .right img{
+        height: 250px;
+        width: 250px;
+        position: absolute;
+        top: 120%;
+        left: 75%;
+        transform: translate(-50%,-50%);
+    }
+
+}
